@@ -12,10 +12,9 @@ class Public::SessionsController < Devise::SessionsController
   end
 
   protected
-
-  def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
-  end
+    def configure_permitted_parameters
+      devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
+    end
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
