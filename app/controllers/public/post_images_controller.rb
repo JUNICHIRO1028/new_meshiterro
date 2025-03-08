@@ -42,3 +42,6 @@ class Public::PostImagesController < ApplicationController
       params.require(:post_image).permit(:shop_name, :image, :caption, :address)
     end
 end
+
+
+
